@@ -1,0 +1,15 @@
+action (chooseMode) {
+  description (어떤 방식으로 사진을 보여줄지 선택합니다. 1.랜덤사진 여러가지 2. 랜덤사진 한가지)
+  type(Search)
+  
+  collect {
+    input (mode) {
+      type (Mode)
+      min (Required) max (One)
+      
+      //selection learning을 사용하지 않고 항상 사용자로부터 선택을 받도록 합니다. (https://bixbydevelopers.com/dev/docs/reference/type/action.collect.input.prompt-behavior)
+      prompt-behavior (AlwaysSelection)
+    }
+  }
+  output (ModeInfo)
+}

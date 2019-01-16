@@ -1,0 +1,23 @@
+// 결과 화면에 대한 보여주는 방식을 설정합니다. (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정합니다.
+  match: ModeInfo(this)
+
+  message { 
+    template-macro (chooseOneMode)
+  }
+
+  render {
+    if (size(this) == 1) {
+      layout-macro (modeInfo) {
+        param (mode) { // chooseMode_result_macro.layout.bxb의 param명을 적습니다.
+          expression (this) // 결과 객체를 layout으로 전달합니다.
+        }
+      }
+      // 'layout-match' 또는 'layout-macro'를 사용하실 수 있습니다. (https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.dialog-macros)
+      // layout-match (this) {
+      //   mode (Details)
+      // }
+    }
+  }
+}

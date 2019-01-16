@@ -1,0 +1,18 @@
+endpoints {
+  authorization {
+    none
+  }
+  
+  // action과 그에 맞는 자바스크립트를 매핑합니다.
+  action-endpoints {
+    action-endpoint (chooseMode) {
+      accepted-inputs (mode)
+      local-endpoint (chooseMode.js)
+    }
+    
+    action-endpoint (showImg) {
+      accepted-inputs (query)
+      local-endpoint (showImg.js)
+    }
+  }
+}

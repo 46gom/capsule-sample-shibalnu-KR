@@ -1,0 +1,4 @@
+structure (Photo) {
+  //이 concept을 라이브러리 capsule의 concept처럼 사용하도록 합니다. (https://bixbydevelopers.com/dev/docs/reference/type/structure.role-of)
+  role-of (viv.core.BaseImage)
+}
