@@ -1,17 +1,17 @@
-// input 화면에 대한 보여주는 방식을 설정합니다. (https://bixbydevelopers.com/dev/docs/reference/type/input-view)
+// input 화면에 대한 보여주는 방식을 설정(https://bixbydevelopers.com/dev/docs/reference/type/input-view)
 input-view {
-  // 입력 화면을 보여주고 싶은 input concept을 지정합니다.
+  // 입력 화면을 보여주고 싶은 input concept을 지정
   match: Mode(this)
 
   message {
-    // input을 받을 시에 보여줄 dialog를 설정합니다.
+    // input을 받을 시에 보여줄 dialog를 설정
     template-macro (chooseModeInput)
   }
 
   render {
-    // 어떻게 화면을 그릴 것인가에 대하여 설정합니다.
+    // 어떻게 화면을 그릴 것인가에 대하여 설정
     form {
-      // Ref (https://bixbydevelopers.com/dev/docs/reference/type/input-view.render.form)
+      // form UI (https://bixbydevelopers.com/dev/docs/reference/type/input-view.render.form)
       elements {
         checkbox {
           id (checkImage)

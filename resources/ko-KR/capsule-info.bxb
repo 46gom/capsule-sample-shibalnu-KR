@@ -1,0 +1,12 @@
+description {
+  displayName (시바견 사진 캡슐)
+  companyName (시바견 사진 캡슐)
+  iconUrl (/img/bixby_launcher.png)
+  description ("시바견 사진 캡슐입니다")
+  websiteUrl (https://github.com/bixbydevelopers/capsule-sample-shibalnu-KR)
+  termsUrl (https://github.com/bixbydevelopers/capsule-sample-shibalnu-KR/blob/master/LICENSE)
+  dispatch-name (시바견 사진 캡슐)
+  dispatch-aliases {
+    alias (시바)
+  }
+}
