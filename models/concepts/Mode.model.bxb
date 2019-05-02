@@ -8,4 +8,8 @@ structure (Mode) {
      type (Random)
      min (Required)
   }
+  property (keywords) {
+    type (Keywords)
+    min (Required)
+  }
 }

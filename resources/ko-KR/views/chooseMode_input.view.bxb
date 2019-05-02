@@ -27,6 +27,13 @@ input-view {
           secondary-text (랜덤으로 사진을 가져옵니다.)
           value ("#{raw(this.random)}")
         }
+        checkbox {
+          id (checkKeywords)
+          type (Keywords)
+          primary-text (키워드)
+          secondary-text (올리브영 인기검색어를 가져옵니다.)
+          value ("#{raw(this.keywords)}")
+        }
        
       }
       on-submit {
@@ -35,6 +42,7 @@ input-view {
         value: Mode{
           images: viv.core.FormElement(checkImage)
           random: viv.core.FormElement(checkRandom)
+          keywords: viv.core.FormElement(checkKeywords)
         }
       }
     }
